@@ -9,6 +9,7 @@ contract PeeTokenSale {
 	uint256 public tokensSold;
 
 	event Sell(address _buyer, uint256 _amount);
+	event EndSale(uint256 _totalAmountSold);
 
 	constructor(PeeToken _tokenContract, uint256 _tokenPrice) public {
 		// Assign admin
